@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<head>
+	<title>Chocolate Fudge Cake</title>
+	<link type="text/css" rel="stylesheet" href="HW.css"/>
+	<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+	<header><h1>Chocolate Fudge Cake</h1></header>            <!--recipe name-->
+	<hr>
+	<section class="img"><img src="https://www.bbcgoodfood.com/sites/default/files/styles/recipe/public/recipe_images/recipe-image-legacy-id--363891_11.jpg?itok=Hz0Fz-1V"></section>
+	<p><h3>Ingredient</h3></p>
+	<ul>
+		<li>200g plain chocolate, broken into chunks (use one with a low cocoa content - we used Waitrose plain Belgian chocolate)</li>
+		<li>200g butter</li>
+		<li>200g light brown muscovado sugar</li>
+		<li>100ml soured cream</li>
+		<li>2 eggs,beaten</li>
+		<li>200g self-raising flour</li>
+		<li>5 tbsp cocoa powder</li>
+		<li>hundreds and thousands, to decorate</li>
+		<p><strong>For the Icing</strong></p>
+			<li>100g plain chocolate</li>
+			<li>170g can condensed milk</li>
+			<li>100g butter</li><br>
+	</ul>
+	<p><h3>Method</h3></p>
+	<ol>
+		<li>Heat oven to 160C/140C fan/gas 3. Line a 22 x 22cm square tin with baking parchment. Put the chocolate, butter and sugar into a large pan with 100ml hot water and gently melt together. Set aside for 2 mins, then stir in the soured cream followed by the eggs. Finally, stir or whisk in the flour and cocoa until lump-free, then pour into the prepared tin. Bake for 50-55 mins until a skewer comes out clean. Sit the tin on a wire rack to cool.</li>.<br>
+		<li>Meanwhile, make the icing. Gently melt together icing ingredients in a heatproof bowl set over a pan of barely simmering water, then chill or cool until spreadable.</li><br>
+	<span id="dots"></span><span id="more"></span><li>To decorate, carefully turn out the cooled cake and peel off the baking parchment. Spread the icing over the top and scatter with hundreds and thousands, then cut the cake into triangles or fingers before serving.</li><br></span>
+	</ol>
+	<button type="button" id="read" onclick="read()">Read More</button>
+	<script type="text/javascript">
+	    var i=0;
+	    function read() {
+	    	if(!i){
+	    		document.getElementById("more").style.display="inline";
+	    		document.getElementById("dots").style.display="none";
+	    		document.getElementById("read").innerHTML="Read less";
+	    		i=1;
+	    	}
+	    	else{
+	    		document.getElementById("more").style.display="none";
+	    		document.getElementById("dots").style.display="inline";
+	    		document.getElementById("read").innerHTML="Read More";
+	    		i=0;
+	    	}
+	    }
+	</script>
+	<div class="circle">
+	<svg width="100" height="100">
+		<circle cx="50" cy="50" r="25" fill="#FCC6A5"/>
+	</svg>
+    </div>
+	<div class="table">
+		<h2 style="color: maroon"><em>Major contributers</em></h2>
+		<table>
+			<thead>
+				<th>Name</th>
+				<th>Qualification</th>
+			</thead>
+		<tr>
+			<td>Dikshita Kambri</td>
+			<td>Yoga Expert</td>
+		</tr><br>
+		<tr>
+			<td>Tejas Kambri</td>
+			<td>Influencer</td>
+		</tr>
+		<tr>
+			<td>Surekha Kambri</td>
+			<td>Ditician</td>
+		</tr>
+		<tr>
+			<td>Ramesh Kambri</td>
+			<td>Doctor</td>
+		</tr>
+		</table>
+	</div>
+	
+	<footer>
+		<h2>If you want to share your recipe,Register here</h2>
+		<form class="form">
+			<label for="first-name">First Name:</label>
+			<input type="text" name="first-name" placeholder="Enter first name" required><br>
+			<label for="last-name">Last name:</label>
+			<input type="text" name="last-name" placeholder="Enter last name" required><br>
+			<label for="contact">Contact Number:</label>
+			<input type="number" name="contact" placeholder="Enter Contact number" required><br>
+			<label for="mail">Email:</label>
+			<input type="email" name="mail" placeholder="Enter your email id" required><br>
+			<label for="Password">Password:</label>
+			<input type="Password" name="Password" placeholder="Enter your password" required><br>
+			<label>Gender:</label>
+			<label for="gender">Male</label>
+			<input type="radio" name="gender" value="choise-1">
+			<label for="gender">Female</label>
+			<input type="radio" name="gender" value="choise-2">
+			<label for="gender">Other</label>
+			<input type="radio" name="gender" value="choise-3"><br>
+			<label for="Date">Birth Date:</label>
+			<input type="number" name="Date" placeholder="Date" required>
+			<select name="Month" placeholder="Month">
+				<option value="0" selected disabled>Month</option>
+				<option>January</option>
+				<option>February</option>
+				<option>March</option>
+				<option>April</option>
+				<option>May</option>
+				<option>June</option>
+				<option>July</option>
+				<option>August</option>
+				<option>September</option>
+				<option>October</option>
+				<option>November</option>
+				<option>December</option>
+			</select>
+			<input type="number" name="year" placeholder="Year"><br>
+			<label for="checkbox">I agree to all conditions</label>
+			<input type="checkbox" name="checkbox"><br>
+			<button type="Submit">Submit</button>
+		</form>
+		<a href="mailto:kambridikshita@gmail.com"><b class="A">If any queries related to recipe contact here</b></a>
+	</footer>
+</body>
+</html>
